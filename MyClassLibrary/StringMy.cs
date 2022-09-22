@@ -12,4 +12,15 @@ public class StringMy
     {
         Console.Write(writeText + spaceEnd);
     }
+
+    // Выбирает строку по диапазону minIndex, maxIndex, и возращает её.
+    static public string SelectedNumberFromIndexMinToMax(string inputString, int minIndex, int maxIndex)
+    {
+        string strRangeIndexMinMax = string.Empty;
+        for (int i = minIndex; i <= maxIndex; i++)
+        {
+            strRangeIndexMinMax += inputString[i];
+        }
+        return strRangeIndexMinMax;
+    }
 }
